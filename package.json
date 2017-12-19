@@ -1,0 +1,24 @@
+{
+  "name": "forms-plugin",
+  "version": "0.1.0",
+  "author": "YOUR NAME HERE",
+  "main": "block.js",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "cross-env": "^5.0.1",
+    "eventemitter3": "^3.0.0",
+    "react": "^16.2.0",
+    "webpack": "^3.1.0"
+  },
+  "scripts": {
+    "build": "cross-env BABEL_ENV=default NODE_ENV=production webpack",
+    "dev": "cross-env BABEL_ENV=default webpack --watch"
+  },
+  "dependencies": {
+    "@wordpress/hooks": "^1.0.1",
+    "jsonfile": "^4.0.0"
+  }
+}

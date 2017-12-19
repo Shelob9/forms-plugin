@@ -1,0 +1,11 @@
+{
+  "namespace" : "forms-plugin",
+  "blocks" : {
+    "input" : {
+      "entry" : "./client/blocks/input.js"
+    },
+    "select" : {
+      "entry" : "./client/blocks/select.js"
+    }
+  }
+}
