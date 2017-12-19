@@ -15,3 +15,8 @@ The point of this plugin is to experiment with and discuss with others:
 Also I needed to figure out how much React I need to know and want to use given that Gutenberg uses a React abstraction for DOM rendering, but I'm Team VueJS.
 
 License: GPL AF - Really only exists to share with my neighbors.
+
+## blocks.json 
+One of the weakness I found in existing boilerplate was that I had a different function to enqueue each block. Yes, separate concerns, but lots of duplicated code is unmanageable.
+
+I'm still working through the concept, but blocks.json has a the name and entry point for each block. That way to add a new block, it only needs to be registered in one place and WordPress and Webpack know what to do. A class should be written to consume parsed blocks.json and enqueue based on that.
